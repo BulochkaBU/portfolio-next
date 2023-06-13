@@ -1,4 +1,4 @@
-import Link from "next/link";
+import LinkLocale from "../utils/LinkLocale";
 import classes from "./promo.module.scss";
 
 interface Props {
@@ -13,12 +13,12 @@ export default function Promo({ dictionary }: { dictionary: Props }) {
       >
         {dictionary.me}
       </h1>
-      <Link
+      <LinkLocale
         href="/welcome"
         className={`${classes.glowPink} text-3xl leading-normal uppercase text-center px-6 mt-8 text-pink-700`}
       >
         {dictionary.seeMore}
-      </Link>
+      </LinkLocale>
     </section>
   );
 }

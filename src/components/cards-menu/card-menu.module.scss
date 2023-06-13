@@ -1,12 +1,6 @@
 .card__background {
-  width: 18.75rem;
   height: 31.25rem;
-  background-size: cover;
-  background-position: center;
   filter: brightness(0.85) saturate(1.2) contrast(0.85);
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
 }
 
 .card:hover .card__background {
@@ -21,10 +15,8 @@
   .cardGrid:hover > .card:not(:hover) .card__background {
     filter: unset;
   }
-}
-@media (max-width: 768px) {
   .card__background {
-    width: 18.75rem;
-    height: 22.25rem;
+    filter: brightness(0.55) saturate(1.2) contrast(0.85);
+    height: 4.25rem;
   }
 }

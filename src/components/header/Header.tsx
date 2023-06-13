@@ -12,12 +12,12 @@ interface Dictionary {
   light: string;
 }
 
-export default function Features({ dictionary, lang }: Props) {
+export default function Header({ dictionary, lang }: Props) {
   return (
-    <div className="flex items-center justify-around my-8  ">
+    <header className="flex items-center justify-around my-8">
       <LanguageToggler />
       <CV lang={lang} />
       <DarkMode dictionary={dictionary} />
-    </div>
+    </header>
   );
 }

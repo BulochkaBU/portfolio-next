@@ -13,11 +13,11 @@ export async function generateMetadata({
 }) {
   const dictionary = await getDictionary(params.lang);
   return {
-    title: dictionary.header.title,
-    description: dictionary.header.description,
+    title: dictionary.title,
+    description: dictionary.description,
     openGraph: {
-      title: dictionary.header.title,
-      description: dictionary.header.description,
+      title: dictionary.title,
+      description: dictionary.description,
       type: "website",
       siteName: "Anastasiia Prudinskaya is a Frontend-Developer",
       // url: "https://prudinskaya.com/",
@@ -27,8 +27,8 @@ export async function generateMetadata({
       },
     },
     twitter: {
-      title: dictionary.header.title,
-      description: dictionary.header.description,
+      title: dictionary.title,
+      description: dictionary.description,
     },
   };
 }

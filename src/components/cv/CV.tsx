@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CV({ lang }: { lang: Locale }) {
   return (
-    <div className=" hover:border border-pink-600 rounded-full">
+    <div className="border border-pink-600 rounded-full dark:bg-pink-600 hover:scale-95">
       <Link
         className="p-3 font-bold dark:text-white text-pink-600 text-xl "
         href={
