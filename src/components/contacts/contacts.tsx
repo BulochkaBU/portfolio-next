@@ -2,7 +2,7 @@
 import Link from "next/link";
 import classes from "./contacts.module.scss";
 import { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { useAppSelector } from "@/store/hooks";
 
 interface Props {
   contacts: string;
@@ -30,7 +30,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
           href="https://github.com/BulochkaBU"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} ${classes.delayIcon} p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"
@@ -50,7 +50,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
           href="https://www.linkedin.com/in/anastasia-prudinskaya"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} ${classes.delayIcon2} p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"
@@ -71,7 +71,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
           href="https://tlgg.ru/u1011"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} ${classes.delayIcon3}  p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"

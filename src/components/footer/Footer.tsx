@@ -2,6 +2,7 @@ import LinkLocale from "../utils/LinkLocale";
 
 interface Props {
   goToMain: string;
+  lifeMotto: string;
 }
 
 export default function Footer({ dictionary }: { dictionary: Props }) {
@@ -15,7 +16,12 @@ export default function Footer({ dictionary }: { dictionary: Props }) {
           {dictionary.goToMain}
         </LinkLocale>
       </nav>
-      <p className="text-slate-300">2021 | © All Rights Reserved</p>
+      <span className="mx-3 before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-pink-400 before:rounded-md before:shadow-lg dark:before:bg-pink-500 relative inline-block">
+        <span className="relative italic text-slate-800 dark:text-white">
+          {dictionary.lifeMotto}
+        </span>
+        ,
+      </span>
     </footer>
   );
 }

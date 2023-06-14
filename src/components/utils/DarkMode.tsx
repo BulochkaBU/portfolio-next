@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { setColorTheme } from "../services/themeAppSlice";
 import { useAppDispatch } from "@/store/hooks";
 
@@ -10,7 +10,9 @@ interface Props {
 }
 export default function DarkMode({ dictionary }: { dictionary: Props }) {
   const [currentMode, setCurrentMode] = useState<string>(dictionary.light);
+
   const dispatch = useAppDispatch();
+
   const changeMode = () => {
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
@@ -22,6 +24,7 @@ export default function DarkMode({ dictionary }: { dictionary: Props }) {
       dispatch(setColorTheme("dark"));
     }
   };
+
   return (
     <label className="relative inline-flex items-center cursor-pointer">
       <input

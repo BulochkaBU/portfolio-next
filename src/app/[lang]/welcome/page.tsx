@@ -1,3 +1,4 @@
+import Spinner from "@/components/utils/Spinner";
 import Welcome from "@/components/welcome/Welcome";
 import { getDictionary } from "@/get-dictionaries";
 import { Locale } from "@/i18n-config";

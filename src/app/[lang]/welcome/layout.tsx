@@ -15,7 +15,7 @@ export default async function GeneralLayout({
   const dictionary = await getDictionary(params.lang);
   return (
     <ProviderWrapper>
-      <main className="lg:container min-vh-100 mx-auto">
+      <main className="lg:container min-vh-100 mx-auto animate__animated animate__zoomInUp">
         <Header dictionary={dictionary} lang={params.lang} />
         <CardsMenu dictionary={dictionary} />
         {children}
