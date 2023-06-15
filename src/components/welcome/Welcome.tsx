@@ -12,6 +12,12 @@ import arrowUpWhite from "@/assets/icons/arrowUpWhite.svg";
 
 interface Props {
   welcome: string;
+  greeting: string;
+  welcomeContent: string;
+  welcomeContent2: string;
+  pointAbout: string;
+  pointWorks: string;
+  pointContacts: string;
 }
 
 export default function Welcome({ dictionary }: { dictionary: Props }) {
@@ -23,11 +29,13 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
         {dictionary.welcome}
       </h2>
       <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
-        Меня зовут Анастасия Прудинская и я рада вас приветствовать на моем
-        сайте!
+        {dictionary.greeting}
       </p>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        Здесь вы узнаете, кто я, как я к этому пришла и что буду с этим делать.
+        {dictionary.welcomeContent}
+      </p>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+        {dictionary.welcomeContent2}
       </p>
 
       <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
@@ -38,7 +46,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
             height={20}
             alt="person"
           />
-          Чтобы узнать кто я — нажмите "про меня".
+          {dictionary.pointAbout}
         </div>
         <Image
           src={colorTheme === "light" ? arrowUp : arrowUpWhite}
@@ -50,14 +58,13 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
       </div>
       <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <div className="flex gap-3 items-center">
-          {" "}
           <Image
             src={colorTheme === "light" ? works : worksWhite}
             width={20}
             height={20}
             alt="works"
           />
-          Чтобы посмотреть на мои работы — нажмите "работы".
+          {dictionary.pointWorks}
         </div>
 
         <Image
@@ -76,7 +83,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
             height={20}
             alt="contacts"
           />
-          Если у вас есть предложения или вопросы — нажмите "контакты".
+          {dictionary.pointContacts}
         </div>
 
         <Image

@@ -6,6 +6,8 @@ import { useAppSelector } from "@/store/hooks";
 
 interface Props {
   contacts: string;
+  contactsContent: string;
+  contactsContent2: string;
 }
 
 export default function Contacts({ dictionary }: { dictionary: Props }) {
@@ -25,12 +27,18 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
       <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-green-500 ">
         {dictionary.contacts}
       </h2>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+        {dictionary.contactsContent}
+      </p>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+        {dictionary.contactsContent2}
+      </p>
       <div className="my-8 mx-4 flex justify-center items-center gap-12 max-[400px]:gap-10 dark">
         <Link
           href="https://github.com/BulochkaBU"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} ${classes.delayIcon} p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"
@@ -50,7 +58,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
           href="https://www.linkedin.com/in/anastasia-prudinskaya"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} ${classes.delayIcon2} p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"
@@ -71,7 +79,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
           href="https://tlgg.ru/u1011"
           target="_blank"
           rel="noreferrer"
-          className={`${classes.hoveredIcon} ${classes.delayIcon3}  p-3 animate-bounce hover:animate-ping`}
+          className={`${classes.hoveredIcon} p-3 animate-bounce hover:animate-ping`}
         >
           <svg
             width="80"
