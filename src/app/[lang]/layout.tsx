@@ -23,7 +23,7 @@ export async function generateMetadata({
       // url: "https://prudinskaya.com/",
       // images: "icon.png",
       icons: {
-        icon: "favicon.ico",
+        icon: "icon.png",
       },
     },
     twitter: {

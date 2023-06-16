@@ -7,7 +7,13 @@ import { useAppSelector } from "@/store/hooks";
 interface Props {
   contacts: string;
   contactsContent: string;
-  contactsContent2: string;
+  contactsText: string;
+  contactsText2: string;
+  contactsText3: string;
+  contactsText4: string;
+  linkedIn: string;
+  gitHub: string;
+  telegram: string;
 }
 
 export default function Contacts({ dictionary }: { dictionary: Props }) {
@@ -28,10 +34,13 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
         {dictionary.contacts}
       </h2>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.contactsContent}
+        {dictionary.contactsText} <strong>{dictionary.linkedIn}</strong>{" "}
+        {dictionary.contactsText2} <strong>{dictionary.telegram}</strong>{" "}
+        {dictionary.contactsText3} <strong>{dictionary.gitHub}</strong>,
+        {dictionary.contactsText4}
       </p>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.contactsContent2}
+        {dictionary.contactsContent}
       </p>
       <div className="my-8 mx-4 flex justify-center items-center gap-12 max-[400px]:gap-10 dark">
         <Link

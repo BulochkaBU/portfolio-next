@@ -6,6 +6,7 @@ interface Props {
   worksContent2: string;
   worksContent3: string;
   worksContent4: string;
+  worksContent5: string;
   worksListLKS: string;
   worksItem1: string;
   worksItem2: string;
@@ -16,7 +17,7 @@ interface Props {
   worksItem6: string;
   worksItem7: string;
   worksItem8: string;
-  worksContent5: string;
+  worksContent6: string;
 }
 
 export default function Works({ dictionary }: { dictionary: Props }) {
@@ -51,6 +52,9 @@ export default function Works({ dictionary }: { dictionary: Props }) {
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.worksContent4}
       </p>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+        {dictionary.worksContent5}
+      </p>
       <ul className="list-disc mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
         {dictionary.worksListLKS}
         <li className="ml-10 leading-8 mt-2">{dictionary.worksItem1}</li>
@@ -66,7 +70,7 @@ export default function Works({ dictionary }: { dictionary: Props }) {
         <li className="ml-10 leading-8">{dictionary.worksItem8}</li>
       </ul>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.worksContent5}
+        {dictionary.worksContent6}
       </p>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5 justify-items-center mt-10">
         {worksList.map((work: any) => (

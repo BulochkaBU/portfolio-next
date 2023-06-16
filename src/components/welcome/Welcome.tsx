@@ -18,6 +18,10 @@ interface Props {
   pointAbout: string;
   pointWorks: string;
   pointContacts: string;
+  about: string;
+  myWorks: string;
+  contacts: string;
+  cv: string;
 }
 
 export default function Welcome({ dictionary }: { dictionary: Props }) {
@@ -36,10 +40,11 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
       </p>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.welcomeContent2}
+        <strong>"{dictionary.cv}"</strong>
       </p>
 
       <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
-        <div className="flex gap-3 items-center">
+        <p className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? person : personWhite}
             width={20}
@@ -47,7 +52,8 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
             alt="person"
           />
           {dictionary.pointAbout}
-        </div>
+          <strong>"{dictionary.about}"</strong>
+        </p>
         <Image
           src={colorTheme === "light" ? arrowUp : arrowUpWhite}
           width={20}
@@ -65,6 +71,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
             alt="works"
           />
           {dictionary.pointWorks}
+          <strong>"{dictionary.myWorks}"</strong>
         </div>
 
         <Image
@@ -84,6 +91,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
             alt="contacts"
           />
           {dictionary.pointContacts}
+          <strong>"{dictionary.contacts}"</strong>
         </div>
 
         <Image
