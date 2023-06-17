@@ -40,7 +40,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
       </p>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.welcomeContent2}
-        <strong>"{dictionary.cv}"</strong>
+        <strong>"{dictionary.cv}"</strong>.
       </p>
 
       <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">

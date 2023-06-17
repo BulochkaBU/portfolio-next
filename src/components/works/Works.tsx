@@ -2,9 +2,13 @@ import Link from "next/link";
 
 interface Props {
   myWorks: string;
+  hardSkillsTitle: string;
+  experienceTitle: string;
+  achievementsTitle: string;
   worksContent1: string;
   worksContent2: string;
   worksContent3: string;
+  projects: string;
   worksContent4: string;
   worksContent5: string;
   worksListLKS: string;
@@ -18,6 +22,23 @@ interface Props {
   worksItem7: string;
   worksItem8: string;
   worksContent6: string;
+  worksContent7: string;
+  workstools: string;
+  frontendDev: string;
+  tools: string;
+  gitHub: string;
+  tools2: string;
+  worksItem10: string;
+  javaScript: string;
+  typeScript: string;
+  react: string;
+  next: string;
+  rtk: string;
+  swr: string;
+  worksItem9: string;
+  bem: string;
+  css: string;
+  tools3: string;
 }
 
 export default function Works({ dictionary }: { dictionary: Props }) {
@@ -40,38 +61,86 @@ export default function Works({ dictionary }: { dictionary: Props }) {
       <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-green-500 ">
         {dictionary.myWorks}
       </h2>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.worksContent1}
+
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+        {dictionary.worksContent1} <strong>{dictionary.frontendDev}</strong>.
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
         {dictionary.worksContent2}
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.worksContent3}
+      <p className="my-2 sm:text-xl text-center text-lg text-slate-800 dark:text-white font-bold">
+        {dictionary.hardSkillsTitle}
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.worksContent4}
+      <hr></hr>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+        {dictionary.worksContent3} <strong>{dictionary.workstools}</strong>.
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.worksContent5}
+
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+        {dictionary.worksContent4} (<strong>{dictionary.tools}</strong>),
+        {dictionary.worksContent5} <strong>{dictionary.gitHub}</strong>.
       </p>
-      <ul className="list-disc mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
-        {dictionary.worksListLKS}
-        <li className="ml-10 leading-8 mt-2">{dictionary.worksItem1}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem2}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem3}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem4}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem5}</li>
-      </ul>
-      <ul className="list-disc mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
-        {dictionary.worksListTools}
-        <li className="ml-10 leading-8 mt-2">{dictionary.worksItem6}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem7}</li>
-        <li className="ml-10 leading-8">{dictionary.worksItem8}</li>
-      </ul>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+      <p className="my-2 sm:text-xl text-center text-lg text-slate-800 dark:text-white font-bold">
+        {dictionary.experienceTitle}
+      </p>
+      <hr></hr>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
         {dictionary.worksContent6}
       </p>
+      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+        {dictionary.worksListLKS}
+      </p>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 items-center sm:items-start sm:gap-6 md:gap-8 sm:my-5 my-2 list-disc">
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem1}
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem2}
+          <strong>{dictionary.tools2}</strong>.
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem3}
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem4}
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem5}
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem10}
+        </li>
+      </ul>
+      <p className="my-2 sm:text-xl text-center text-lg text-slate-800 dark:text-white font-bold">
+        {dictionary.achievementsTitle}
+      </p>
+      <hr></hr>
+
+      <ul className="grid grid-cols-1 sm:grid-cols-2 items-center sm:items-start sm:gap-6 md:gap-8 sm:my-5 my-2 list-disc">
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksListTools}
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem6} <strong>{dictionary.javaScript}</strong>
+          {dictionary.worksContent7} <strong>{dictionary.typeScript}</strong>,
+          {dictionary.worksItem6} <strong>{dictionary.react}</strong>
+          {dictionary.worksContent7} <strong>{dictionary.next}</strong>,
+          {dictionary.worksItem6} <strong>{dictionary.rtk}</strong>
+          {dictionary.worksContent7} <strong>{dictionary.swr}</strong>.
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem7}
+          <strong>{dictionary.bem}</strong>, {dictionary.worksItem9}
+          <strong>{dictionary.css}</strong>.
+        </li>
+        <li className="ml-6 sm:text-xl text-lg leading-7  text-slate-800 dark:text-white sm:px-2 lg:px-0 my-2 sm:my-0">
+          {dictionary.worksItem8} <strong>{dictionary.tools3}</strong>.
+        </li>
+      </ul>
+      <p className="my-2 sm:text-xl text-center text-lg text-slate-800 dark:text-white font-bold">
+        {dictionary.projects}
+      </p>
+      <hr></hr>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5 justify-items-center mt-10">
         {worksList.map((work: any) => (
           <>
