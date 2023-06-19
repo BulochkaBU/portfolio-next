@@ -1,7 +1,6 @@
 import { Montserrat } from "next/font/google";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionaries";
-import "animate.css";
 import "@/styles/globals.scss";
 
 const montserrat = Montserrat({ weight: ["400", "700"], subsets: ["latin"] });
@@ -43,7 +42,7 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={`${montserrat.className} dark:bg-slate-900`}>
-        <main className="min-h-screen ">{children}</main>
+        {children}
       </body>
     </html>
   );

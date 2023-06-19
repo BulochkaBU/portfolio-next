@@ -30,13 +30,16 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
 
   return (
     <section className="my-8 sm:my-12 px-6 xl:px-20 ">
-      <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-green-500 ">
+      <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 ">
         {dictionary.contacts}
       </h2>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
-        {dictionary.contactsText} <strong>{dictionary.linkedIn}</strong>{" "}
-        {dictionary.contactsText2} <strong>{dictionary.telegram}</strong>{" "}
-        {dictionary.contactsText3} <strong>{dictionary.gitHub}</strong>,
+        {dictionary.contactsText}{" "}
+        <strong className=" dark:text-green-500">{dictionary.linkedIn}</strong>{" "}
+        {dictionary.contactsText2}{" "}
+        <strong className=" dark:text-green-500">{dictionary.telegram}</strong>{" "}
+        {dictionary.contactsText3}{" "}
+        <strong className=" dark:text-green-500">{dictionary.gitHub}</strong>,
         {dictionary.contactsText4}
       </p>
       <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">

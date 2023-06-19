@@ -11,7 +11,7 @@ interface Props {
 }
 export default function CardsMenu({ dictionary }: { dictionary: Props }) {
   return (
-    <section
+    <nav
       className={`${classes.cardGrid} grid grid-cols-1 gap-6 lg:grid-cols-3 justify-items-center  mx-4 mt-8 sm:mt-12`}
     >
       <LinkLocale
@@ -52,6 +52,6 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
           {dictionary.contacts}
         </h3>
       </LinkLocale>
-    </section>
+    </nav>
   );
 }

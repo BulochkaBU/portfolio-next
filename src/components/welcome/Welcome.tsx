@@ -93,7 +93,6 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
           {dictionary.pointContacts}
           <strong>"{dictionary.contacts}"</strong>
         </div>
-
         <Image
           src={colorTheme === "light" ? arrowUp : arrowUpWhite}
           width={20}
