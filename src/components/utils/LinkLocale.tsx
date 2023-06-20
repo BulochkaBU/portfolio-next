@@ -7,10 +7,12 @@ export default function LinkLocale({
   children,
   href,
   className,
+  target,
 }: {
   children: React.ReactNode;
   href: string;
   className: string;
+  target?: string;
 }) {
   const pathname = usePathname();
 

@@ -19,10 +19,10 @@ export async function generateMetadata({
       description: dictionary.description,
       type: "website",
       siteName: "Anastasiia Prudinskaya is a Frontend-Developer",
-      // url: "https://prudinskaya.com/",
-      // images: "icon.png",
+      url: "https://prudinskaya.com/",
+      images: "/icon.png",
       icons: {
-        icon: "icon.png",
+        icon: "/icon.png",
       },
     },
     twitter: {
