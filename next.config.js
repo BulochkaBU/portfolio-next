@@ -1,18 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: false,
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.pdf$/,
-      use: {
-        loader: "file-loader",
-        options: {
-          name: "[path][name].[ext]",
-        },
-      },
-    });
-    return config;
-  },
+  output: "standalone",
 };
 
 module.exports = nextConfig;
