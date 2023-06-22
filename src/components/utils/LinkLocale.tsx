@@ -18,7 +18,11 @@ export default function LinkLocale({
 
   const currentLanguage = pathname.split("/")[1] as Locale;
   return (
-    <Link href={`/${currentLanguage}${href}`} className={className}>
+    <Link
+      href={`/${currentLanguage}${href}`}
+      className={className}
+      target={target}
+    >
       {children}
     </Link>
   );
