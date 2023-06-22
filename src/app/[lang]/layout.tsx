@@ -12,6 +12,7 @@ export async function generateMetadata({
 }) {
   const dictionary = await getDictionary(params.lang);
   return {
+    metadataBase: new URL("https://prudinskaya.com/"),
     title: dictionary.title,
     description: dictionary.description,
     openGraph: {

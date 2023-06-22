@@ -164,17 +164,15 @@ export default function Works({ dictionary }: { dictionary: Props }) {
         <hr></hr>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5 justify-items-center mt-10">
           {worksList.map((work: any) => (
-            <>
-              <Link
-                key={work.name}
-                href={work.link}
-                className="flex w-full justify-center"
-              >
-                <div className="flex justify-center items-center bg-orange-200 font-bold text-lg dark:text-white dark:bg-orange-600 w-full h-12 md:w-44 rounded-2xl animate-bounce hover:animate-ping ">
-                  {work.name}
-                </div>
-              </Link>
-            </>
+            <Link
+              key={work.name}
+              href={work.link}
+              className="flex w-full justify-center"
+            >
+              <div className="flex justify-center items-center bg-orange-200 font-bold text-lg dark:text-white dark:bg-orange-600 w-full h-12 md:w-44 rounded-2xl animate-bounce hover:animate-ping ">
+                {work.name}
+              </div>
+            </Link>
           ))}
         </div>
       </article>
