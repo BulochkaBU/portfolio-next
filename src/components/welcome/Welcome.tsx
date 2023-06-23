@@ -32,18 +32,18 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
       <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-green-500 ">
         {dictionary.welcome}
       </h2>
-      <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
+      <p className="mt-2 sm:mt-5 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white  sm:px-2 lg:px-0 ">
         {dictionary.greeting}
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+      <p className="mt-2 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.welcomeContent}
       </p>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+      <p className="mt-2 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.welcomeContent2}
         <strong>"{dictionary.cv}"</strong>.
       </p>
 
-      <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
+      <div className=" md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <p className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? person : personWhite}
@@ -62,7 +62,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
           className="animate-bounce"
         />
       </div>
-      <div className="my-4 sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
+      <div className="my-4 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <div className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? works : worksWhite}
@@ -82,7 +82,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
           className="animate-bounce"
         />
       </div>
-      <div className=" sm:text-xl text-lg text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
+      <div className=" md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <div className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? contacts : contactsWhite}

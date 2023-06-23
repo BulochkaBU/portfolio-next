@@ -19,7 +19,7 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
         href="/welcome/about"
       >
         <div
-          className={`${classes.card__background} rounded-2xl w-full bg-cover bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear`}
+          className={`${classes.card__background} rounded-2xl w-full bg-cover bg-top lg:bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear`}
           style={{ backgroundImage: `url(${me.src})` }}
         ></div>
         <h3 className="absolute left-3 bottom-2  text-white text-bold text-3xl p-2 hover:text-pink-600 ">
