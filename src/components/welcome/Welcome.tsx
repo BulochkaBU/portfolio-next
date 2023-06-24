@@ -43,7 +43,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
         <strong>"{dictionary.cv}"</strong>.
       </p>
 
-      <div className=" md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
+      <div className="mt-4 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <p className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? person : personWhite}
@@ -62,7 +62,7 @@ export default function Welcome({ dictionary }: { dictionary: Props }) {
           className="animate-bounce"
         />
       </div>
-      <div className="my-4 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
+      <div className="my-6 md:text-xl sm:text-lg text-sm  text-slate-800 dark:text-white flex gap-3 items-center justify-between md:justify-normal shadow-sm py-4 px-1 lg:px-0">
         <div className="flex gap-3 items-center">
           <Image
             src={colorTheme === "light" ? works : worksWhite}
