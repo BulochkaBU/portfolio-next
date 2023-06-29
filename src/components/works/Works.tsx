@@ -43,7 +43,7 @@ interface Props {
 
 export default function Works({ dictionary }: { dictionary: Props }) {
   const worksList: any = [
-    { name: "LKS", link: "http://dev.littleknitsstory.com/" },
+    { name: "LKS", link: "https://github.com/littleknitsstory/frontend" },
     {
       name: "Portfolio",
       link: "https://github.com/BulochkaBU/portfolio-next",
@@ -62,7 +62,7 @@ export default function Works({ dictionary }: { dictionary: Props }) {
         <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 ">
           {dictionary.myWorks}
         </h2>
-        <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+        <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white">
           {dictionary.worksContent2}
         </p>
         <h3 className="my-2 sm:text-xl text-center text-lg text-orange-600 dark:text-orange-500 uppercase font-bold">

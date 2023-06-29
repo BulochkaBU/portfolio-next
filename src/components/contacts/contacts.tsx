@@ -33,7 +33,7 @@ export default function Contacts({ dictionary }: { dictionary: Props }) {
       <h2 className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 ">
         {dictionary.contacts}
       </h2>
-      <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
+      <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white  sm:px-2 lg:px-0">
         {dictionary.contactsText}{" "}
         <strong className=" dark:text-green-500">{dictionary.linkedIn}</strong>{" "}
         {dictionary.contactsText2}{" "}
