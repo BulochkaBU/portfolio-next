@@ -5,22 +5,18 @@ import "@/styles/globals.scss";
 
 const montserrat = Montserrat({ weight: ["400", "700"], subsets: ["latin"] });
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: Locale };
-}) {
+export async function generateMetadata({ params }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(params.lang);
   return {
-    metadataBase: new URL("https://prudinskaya.com/"),
+    metadataBase: new URL("https://prudinskaia.space/"),
     title: dictionary.title,
     description: dictionary.description,
     openGraph: {
       title: dictionary.title,
       description: dictionary.description,
       type: "website",
-      siteName: "Anastasiia Prudinskaya is a Frontend-Developer",
-      url: "https://prudinskaya.com/",
+      siteName: "Anastasiia Prudinskaia is a Frontend-Developer",
+      url: "https://prudinskaia.space/",
       images: "/icon.png",
       icons: {
         icon: "/icon.png",
@@ -42,9 +38,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      <body className={`${montserrat.className} dark:bg-slate-900`}>
-        {children}
-      </body>
+      <body className={`${montserrat.className} dark:bg-slate-900`}>{children}</body>
     </html>
   );
 }

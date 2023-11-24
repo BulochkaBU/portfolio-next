@@ -1,6 +1,6 @@
 # 🚀 My portfolio on Next.js
 
-[![Made with - Love](https://img.shields.io/badge/Made_with-Love-red)](https://prudinskaya.com)
+[![Made with - Love](https://img.shields.io/badge/Made_with-Love-red)](https://prudinskaia.space/)
 
 ### Hi there 👋, my name is Anastasiia Prudinskaya
 
