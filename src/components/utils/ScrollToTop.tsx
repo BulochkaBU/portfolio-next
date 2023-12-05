@@ -11,7 +11,7 @@ export default function ScrollToTop() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
-      className="absolute bottom-2 right-2 w-10 h-10 cursor-pointer"
+      className="absolute bottom-2 right-0 w-10 h-10 cursor-pointer hidden xl:block"
       onClick={() => scrollToTop()}
     >
       <path
