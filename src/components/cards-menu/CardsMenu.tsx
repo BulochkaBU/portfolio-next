@@ -14,10 +14,7 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
     <nav
       className={`${classes.cardGrid} grid grid-cols-1 gap-6 lg:grid-cols-3 justify-items-center  mx-4 mt-8 sm:mt-12`}
     >
-      <LinkLocale
-        className={`${classes.card} relative block w-full  xl:w-80`}
-        href="/welcome/about"
-      >
+      <LinkLocale className={`${classes.card} relative block w-full  xl:w-80`} href="/welcome/about#about">
         <div
           className={`${classes.card__background} rounded-2xl w-full bg-cover bg-top lg:bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear`}
           style={{ backgroundImage: `url(${me.src})` }}
@@ -27,10 +24,7 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
         </h3>
       </LinkLocale>
 
-      <LinkLocale
-        className={`${classes.card} relative block w-full xl:w-80`}
-        href="/welcome/works"
-      >
+      <LinkLocale className={`${classes.card} relative block w-full xl:w-80`} href="/welcome/works#works">
         <div
           className={`${classes.card__background} rounded-2xl  w-full bg-cover bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear `}
           style={{ backgroundImage: `url(${works.src})` }}
@@ -40,10 +34,7 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
         </h3>
       </LinkLocale>
 
-      <LinkLocale
-        className={`${classes.card} relative block w-full  xl:w-80`}
-        href="/welcome/contacts"
-      >
+      <LinkLocale className={`${classes.card} relative block w-full  xl:w-80`} href="/welcome/contacts#contacts">
         <div
           className={`${classes.card__background} rounded-2xl  w-full bg-cover bg-center  transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear `}
           style={{ backgroundImage: `url(${phone.src})` }}
