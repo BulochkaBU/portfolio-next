@@ -1,3 +1,5 @@
+import ScrollToTop from "../utils/ScrollToTop";
+
 interface Props {
   about: string;
   myName: string;
@@ -21,11 +23,11 @@ interface Props {
 
 export default function About({ dictionary }: { dictionary: Props }) {
   return (
-    <section className="my-8 sm:my-12 px-6 xl:px-20">
+    <section className="my-8 sm:my-12 px-6 xl:px-20 relative">
       <article>
         <h2
-          className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 "
           id="about"
+          className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 "
         >
           {dictionary.about}
         </h2>
@@ -82,6 +84,7 @@ export default function About({ dictionary }: { dictionary: Props }) {
           </li>
         </ul>
       </article>
+      <ScrollToTop />
     </section>
   );
 }

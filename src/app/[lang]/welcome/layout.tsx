@@ -3,7 +3,6 @@ import { getDictionary } from "@/get-dictionaries";
 import CardsMenu from "@/components/cards-menu/CardsMenu";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import ScrollToTop from "@/components/utils/ScrollToTop";
 import ProviderWrapper from "@/components/provider-wrapper/ProviderWrapper";
 
 export default async function GeneralLayout({
@@ -17,7 +16,6 @@ export default async function GeneralLayout({
   return (
     <ProviderWrapper>
       <main className="lg:container min-vh-100 mx-auto animate__animated animate__zoomInUp">
-        <ScrollToTop />
         <Header dictionary={dictionary} lang={params.lang} />
         <CardsMenu dictionary={dictionary} />
         {children}
