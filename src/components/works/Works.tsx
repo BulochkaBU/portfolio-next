@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollToTop from "../utils/ScrollToTop";
 
 interface Props {
   myWorks: string;
@@ -57,11 +58,11 @@ export default function Works({ dictionary }: { dictionary: Props }) {
   ];
 
   return (
-    <section className="my-8 sm:my-12 px-6 xl:px-20 ">
+    <section className="my-8 sm:my-12 px-6 xl:px-20 relative">
       <article>
         <h2
-          className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 "
           id="works"
+          className="sm:text-3xl text-2xl text-center lg:text-start font-bold text-green-700 dark:text-pink-500 "
         >
           {dictionary.myWorks}
         </h2>
@@ -145,6 +146,7 @@ export default function Works({ dictionary }: { dictionary: Props }) {
           ))}
         </div>
       </article>
+      <ScrollToTop />
     </section>
   );
 }
