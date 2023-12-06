@@ -1,62 +1,9 @@
 import Link from "next/link";
 import ScrollToTop from "../utils/ScrollToTop";
-
-interface Props {
-  myWorks: string;
-  hardSkillsTitle: string;
-  experienceTitle: string;
-  achievementsTitle: string;
-  worksContent1: string;
-  worksContent2: string;
-  worksContent3: string;
-  projects: string;
-  worksContent4: string;
-  worksContent5: string;
-  worksListLKS: string;
-  worksItem1: string;
-  worksItem2: string;
-  worksItem3: string;
-  worksItem4: string;
-  worksItem5: string;
-  worksListTools: string;
-  worksItem6: string;
-  worksItem7: string;
-  worksItem8: string;
-  worksContent6: string;
-  worksContent7: string;
-  workstools: string;
-  frontendDev: string;
-  tools: string;
-  gitHub: string;
-  tools2: string;
-  worksItem10: string;
-  javaScript: string;
-  typeScript: string;
-  react: string;
-  next: string;
-  rtk: string;
-  swr: string;
-  worksItem9: string;
-  bem: string;
-  css: string;
-  tools3: string;
-}
+import { worksList } from "../const/worksList";
+import { Props } from "./types";
 
 export default function Works({ dictionary }: { dictionary: Props }) {
-  const worksList: any = [
-    { name: "LKS", link: "https://github.com/littleknitsstory/frontend" },
-    {
-      name: "Portfolio",
-      link: "https://github.com/BulochkaBU/portfolio-next",
-    },
-    { name: "Marvel", link: "https://github.com/BulochkaBU/marvel" },
-    {
-      name: "Heroes",
-      link: "https://github.com/BulochkaBU/hero_admin_panel_template",
-    },
-    { name: "Prodman", link: "https://bulochkabu.github.io/" },
-  ];
-
   return (
     <>
       <section className="my-8 sm:my-12 px-6 xl:px-20">

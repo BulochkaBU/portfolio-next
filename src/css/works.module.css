@@ -1,0 +1,15 @@
+.circle {
+  box-shadow: 0 0 20px rgba(255, 81, 0, 0.4431372549);
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
