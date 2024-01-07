@@ -1,13 +1,13 @@
 export const worksList: any = [
-  { name: "LKS", link: "https://github.com/littleknitsstory/frontend" },
+  { name: "Portfolio", link: "https://github.com/BulochkaBU/portfolio-next" },
   {
-    name: "Portfolio",
-    link: "https://github.com/BulochkaBU/portfolio-next",
+    name: "WhereIsGleb",
+    link: "https://wheregleb.space/",
   },
-  { name: "Marvel", link: "https://github.com/BulochkaBU/marvel" },
+  { name: "Dogs", link: "http://dogs.dev.littledevstory.site/" },
   {
-    name: "Heroes",
-    link: "https://github.com/BulochkaBU/hero_admin_panel_template",
+    name: "Dustbin",
+    link: "https://github.com/BulochkaBU/dustbin",
   },
   { name: "Prodman", link: "https://bulochkabu.github.io/" },
 ];
