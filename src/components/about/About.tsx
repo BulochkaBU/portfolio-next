@@ -17,7 +17,8 @@ export default function About({ dictionary }: { dictionary: Props }) {
             {dictionary.myName}
           </p>
           <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
-            {dictionary.worksContent1} <strong className=" dark:text-green-500">{dictionary.frontendDev}</strong>.
+            {dictionary.worksContent1}{" "}
+            <strong className=" dark:text-green-500">{dictionary.frontendDev}</strong>.
           </p>
 
           <h3 className="my-2 sm:text-xl text-center text-lg text-orange-600 dark:text-orange-500 uppercase font-bold">
@@ -43,8 +44,12 @@ export default function About({ dictionary }: { dictionary: Props }) {
             {dictionary.hobbyTitle}
           </h3>
           <hr></hr>
-          <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white ">{dictionary.hobbyContent1}</p>
-          <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">{dictionary.hobbyContent2}</p>
+          <p className="mt-2 sm:mt-5 sm:text-xl text-lg text-slate-800 dark:text-white ">
+            {dictionary.hobbyContent1}
+          </p>
+          <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
+            {dictionary.hobbyContent2}
+          </p>
           <p className="mt-2 sm:text-xl text-lg text-slate-800 dark:text-white">
             {dictionary.hobbyContent3}
             <strong className=" dark:text-orange-300">"{dictionary.hobbyContent4}"🚀</strong>.
