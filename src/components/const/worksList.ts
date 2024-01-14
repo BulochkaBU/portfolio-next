@@ -6,7 +6,7 @@ export const worksList: any = [
   },
   { name: "Dogs", link: "http://dogs.dev.littledevstory.site/" },
   {
-    name: "Dustbin",
+    name: "Dustbins",
     link: "https://github.com/BulochkaBU/dustbin",
   },
   { name: "Prodman", link: "https://bulochkabu.github.io/" },
