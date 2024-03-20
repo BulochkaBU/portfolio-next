@@ -1,11 +1,14 @@
-.hoveredIcon {
-  &:hover {
-    svg path {
-      transition: all 0.6s;
-      fill: #fe019a;
+@media (min-width: 1023px) {
+  .hoveredIcon {
+    &:hover {
+      svg path {
+        transition: all 0.6s;
+        fill: #fe019a;
+      }
     }
   }
 }
+
 @media (max-width: 400px) {
   .hoveredIcon {
     svg {

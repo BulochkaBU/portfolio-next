@@ -16,24 +16,19 @@ export default function LanguageToggler() {
   function toggleLanguages() {
     let nextLanguage: string;
 
-    const currentLanguageIndex = locales.findIndex(
-      (locale) => locale === currentLanguage
-    );
+    const currentLanguageIndex = locales.findIndex((locale) => locale === currentLanguage);
 
     if (currentLanguageIndex >= locales.length - 1) {
       nextLanguage = `${pathname.replace(currentLanguage, locales[0])}`;
     } else {
-      nextLanguage = `${pathname.replace(
-        currentLanguage,
-        locales[currentLanguageIndex + 1]
-      )}`;
+      nextLanguage = `${pathname.replace(currentLanguage, locales[currentLanguageIndex + 1])}`;
     }
 
     return nextLanguage;
   }
 
   return (
-    <div className="border border-pink-600 rounded-full dark:bg-pink-600 hover:scale-95">
+    <div className="border border-pink-600 rounded-full dark:bg-pink-600 xl:hover:scale-95">
       <Link
         replace
         href={toggleLanguages()}

@@ -14,32 +14,41 @@ export default function CardsMenu({ dictionary }: { dictionary: Props }) {
     <nav
       className={`${classes.cardGrid} grid grid-cols-1 gap-6 lg:grid-cols-3 justify-items-center  mx-4 mt-8 sm:mt-12`}
     >
-      <LinkLocale className={`${classes.card} relative block w-full  xl:w-80`} href="/welcome/about#about">
+      <LinkLocale
+        className={`${classes.card} relative block w-full  xl:w-80`}
+        href="/welcome/about#about"
+      >
         <div
           className={`${classes.card__background} rounded-2xl w-full bg-cover bg-top lg:bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear`}
           style={{ backgroundImage: `url(${me.src})` }}
         ></div>
-        <h3 className="absolute left-3 bottom-2  text-white text-bold text-3xl p-2 hover:text-pink-600 ">
+        <h3 className="absolute left-3 bottom-2  text-white text-bold text-3xl p-2 xl:hover:text-pink-600 ">
           {dictionary.about}
         </h3>
       </LinkLocale>
 
-      <LinkLocale className={`${classes.card} relative block w-full xl:w-80`} href="/welcome/works#works">
+      <LinkLocale
+        className={`${classes.card} relative block w-full xl:w-80`}
+        href="/welcome/works#works"
+      >
         <div
           className={`${classes.card__background} rounded-2xl  w-full bg-cover bg-center transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear `}
           style={{ backgroundImage: `url(${works.src})` }}
         ></div>
-        <h3 className="absolute left-3 bottom-2 text-white text-bold text-3xl p-2 hover:text-pink-600">
+        <h3 className="absolute left-3 bottom-2 text-white text-bold text-3xl p-2 xl:hover:text-pink-600">
           {dictionary.myWorks}
         </h3>
       </LinkLocale>
 
-      <LinkLocale className={`${classes.card} relative block w-full  xl:w-80`} href="/welcome/contacts#contacts">
+      <LinkLocale
+        className={`${classes.card} relative block w-full  xl:w-80`}
+        href="/welcome/contacts#contacts"
+      >
         <div
           className={`${classes.card__background} rounded-2xl  w-full bg-cover bg-center  transform origin-center scale-100 translate-z-0 transition duration-200 ease-linear `}
           style={{ backgroundImage: `url(${phone.src})` }}
         ></div>
-        <h3 className="absolute left-3 bottom-2 text-white text-bold text-3xl p-2 hover:text-pink-600">
+        <h3 className="absolute left-3 bottom-2 text-white text-bold text-3xl p-2 xl:hover:text-pink-600">
           {dictionary.contacts}
         </h3>
       </LinkLocale>

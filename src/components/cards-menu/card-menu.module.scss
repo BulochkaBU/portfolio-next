@@ -1,22 +1,22 @@
-.card__background {
-  height: 31.25rem;
-  filter: brightness(0.85) saturate(1.2) contrast(0.85);
-}
-
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
 .cardGrid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  filter: unset;
+}
+.card__background {
+  filter: unset;
+  height: 4.25rem;
 }
 
-@media (max-width: 1023px) {
-  .cardGrid:hover > .card:not(:hover) .card__background {
-    filter: unset;
-  }
+@media (min-width: 1023px) {
   .card__background {
-    filter: brightness(0.55) saturate(1.2) contrast(0.85);
-    height: 4.25rem;
+    height: 31.25rem;
+    filter: brightness(0.85) saturate(1.2) contrast(0.85);
+  }
+
+  .card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+  }
+
+  .cardGrid:hover > .card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
   }
 }
